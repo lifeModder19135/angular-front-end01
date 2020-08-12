@@ -1,5 +1,20 @@
 import { Component } from '@angular/core';
 
+export class Project {
+  id: number;
+  name: string;
+}
+  
+project: Project = {
+    id: 1001,
+    name: 'Hello world!'
+  };
+  
+  hero: Hero = {
+    id: 1,
+    name: 'Windstorm'
+  };
+
 @Component({
   selector: 'app-root',
   //templateUrl: './app.component.html',
