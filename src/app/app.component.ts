@@ -11,13 +11,14 @@ export class Project  {
   selector: 'app-root',
   //templateUrl: './app.component.html',
   //styleUrls: ['./app.component.css']
-  template: `
+  template: 
+            `
             <h1>{{title}}</h1>
             <h2>project: \'{{project.name}}\' is selected</h2>
             <div><label>Project ID: </label>{{project.id}}</div>
             <div>
               <label>Project Name: </label>
-              <input [(ngModel)]="project.name" placeholder="name">
+              <input [(ngModel)] = "project.name" placeholder="name">
             </div>
             <div><label>Root Folder: </label>{{project.root}}</div>
             <div><label>Project Description: </label>{{project.desc}}</div>
