@@ -20,7 +20,7 @@ const PROJECTS: Project[] = [
   { id: 1011, name: 'Springboot Layered API Template', root: '\\CODING PROJECTS\\STS_Workspace\\Springboot_Layered_API_Template', desc: 'Template for a simple Spring Data faccess layer.'},
   { id: 1012, name: 'VS Code Debugging Tutorial', root: '\\CODING PROJECTS\\VS_Code_Debugging_Tutorial', desc: 'Sandbox for expirimenting with Code\'s debugging features for JS and TS/ Angular.'},
   { id: 1013, name: 'VS Code Spring Extension Demo', root: '\\CODING PROJECTS\\VS-Code-Spring-Extension-Demo', desc: 'Just made this to see how easy / feasible Spring development is via VS Code.'},
-  { id: 1014, name: 'Workout Assistant 2 (For-Share version)', root: '\\CODING PROJECTS\\WorkoutAssistant2 - ForShare', desc: '\'safe to share\' version of my most recent Android app \'Dumbbell Workout Assistant\'. Images and other various resources have been removed to prevent piracy.'},
+  { id: 1014, name: 'Workout Assistant 2 (For-Share)', root: '\\CODING PROJECTS\\WorkoutAssistant2 - ForShare', desc: '\'safe to share\' version of my most recent Android app \'Dumbbell Workout Assistant\'. Images and other various resources have been removed to prevent piracy.'},
 ];
   
 @Component({
@@ -55,7 +55,7 @@ const PROJECTS: Project[] = [
             margin: 0 0 2em 0;
             list-style-type: none;
             padding: 0;
-            width: 15em;
+            width: 22em;
           }
           .projects li {
             cursor: pointer;
