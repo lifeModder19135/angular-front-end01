@@ -28,12 +28,12 @@ const PROJECTS: Project[] = [
   //templateUrl: './app.component.html',
   //styleUrls: ['./app.component.css']
   template: 
-            `
+          `
             <h1>{{title}}</h1>
             <h2>Projects List</h2>
             <ul class="projects">
               <li *ngFor= "let project of projects">
-                <span class="badges">{{project.id}}</span> {{project.name}}
+                <span class="badge">{{project.id}}</span> {{project.name}}
               </li>
             </ul>
             <h2>project: \'{{project.name}}\' is selected</h2>
@@ -44,7 +44,57 @@ const PROJECTS: Project[] = [
             </div>
             <div><label>Root Folder: C:\\\\Desktop</label>{{project.root}}</div>
             <div><label>Project Description: </label>{{project.desc}}</div>
-            `
+          `,
+  styles: 
+          [`
+          .selected {
+            background-color: #CFD8DC !important;
+            color: white;
+          }
+          .projects {
+            margin: 0 0 2em 0;
+            list-style-type: none;
+            padding: 0;
+            width: 15em;
+          }
+          .projects li {
+            cursor: pointer;
+            position: relative;
+            left: 0;
+            background-color: #EEE;
+            margin: .5em;
+            padding: .3em 0;
+            height: 1.6em;
+            border-radius: 4px;
+          }
+          .projects li.selected:hover {
+            background-color: #BBD8DC !important;
+            color: white;
+          }
+          .projects li:hover {
+            color: #607D8B;
+            background-color: #DDD;
+            left: .1em;
+          }
+          .projects .text {
+            position: relative;
+            top: -3px;
+          }
+          .projects .badge{
+            display: inline-block;
+            font-size: small;
+            color: white;
+            padding: 0.8em 0.7em 0 0.7em;
+            background-color: #607D8B;
+            line-height: 1em;
+            position: relative;
+            left: -1px;
+            top: -4px;
+            height: 1.8em;
+            margin-right: .8em;
+            border-radius: 4px 0 0 4px;
+          }
+          `]
 })
 export class AppComponent {
   title = 'Nate\'s Projects';
