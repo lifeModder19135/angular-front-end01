@@ -36,7 +36,7 @@ const PROJECTS: Project[] = [
               <label>Project Name: </label>
               <input [(ngModel)] = "project.name" placeholder="name">
             </div>
-            <div><label>Root Folder: </label>{{project.root}}</div>
+            <div><label>Root Folder: C:\\\\Desktop</label>{{project.root}}</div>
             <div><label>Project Description: </label>{{project.desc}}</div>
             `
 })
@@ -45,7 +45,8 @@ export class AppComponent {
   project: Project = {
     id: 1001,
     name: 'MyProject',
-    root: '\CODING PROJECTS\MyProject',
+    root: '\\CODING PROJECTS\\MyProject',
     desc: 'This is a simple sample project.'
   };
+  Projects = PROJECTS;
 } 
