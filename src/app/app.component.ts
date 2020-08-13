@@ -15,11 +15,11 @@ const PROJECTS: Project[] = [
   { id: 1006, name: 'ng-front-end01', root: '\\CODING PROJECTS\\ng-front-end01', desc: 'This project!!!'},
   { id: 1007, name: 'Roblox Studio Worlds', root: '\\CODING PROJECTS\\Roblox Studio Worlds', desc: 'Just a generic workspace for Cadey\'s Roblox Studio Worlds and custom scripts.'},
   { id: 1008, name: 'Snippets etc', root: '\\CODING PROJECTS\\Snippets etc', desc: 'Workspace for random scripts, files, and Snippets that need to be kept with my code but do not belong anywhere else.'},
-  { id: 1009, name: 'STS_Workspace', root: '\\CODING PROJECTS\\STS_Workspace', desc: 'Workspace for all my Spring Projects built using Spring Tool Suite.'},
+  { id: 1009, name: 'STS Workspace', root: '\\CODING PROJECTS\\STS_Workspace', desc: 'Workspace for all my Spring Projects built using Spring Tool Suite.'},
   { id: 1010, name: 'Data Access Layer With Thread Pool', root: '\\CODING PROJECTS\\STS_Workspace\\DAL-With-Thread-Pool', desc: 'Copy of project #1003'},
   { id: 1011, name: 'Springboot Layered API Template', root: '\\CODING PROJECTS\\STS_Workspace\\Springboot_Layered_API_Template', desc: 'Template for a simple Spring Data faccess layer.'},
-  { id: 1012, name: 'VS_Code_Debugging_Tutorial', root: '\\CODING PROJECTS\\VS_Code_Debugging_Tutorial', desc: 'Sandbox for expirimenting with Code\'s debugging features for JS and TS/ Angular.'},
-  { id: 1013, name: 'VS-Code-Spring-Extension-Demo', root: '\\CODING PROJECTS\\VS-Code-Spring-Extension-Demo', desc: 'Just made this to see how easy / feasible Spring development is via VS Code.'},
+  { id: 1012, name: 'VS Code Debugging Tutorial', root: '\\CODING PROJECTS\\VS_Code_Debugging_Tutorial', desc: 'Sandbox for expirimenting with Code\'s debugging features for JS and TS/ Angular.'},
+  { id: 1013, name: 'VS Code Spring Extension Demo', root: '\\CODING PROJECTS\\VS-Code-Spring-Extension-Demo', desc: 'Just made this to see how easy / feasible Spring development is via VS Code.'},
   { id: 1014, name: 'Workout Assistant 2 (For-Share version)', root: '\\CODING PROJECTS\\WorkoutAssistant2 - ForShare', desc: '\'safe to share\' version of my most recent Android app \'Dumbbell Workout Assistant\'. Images and other various resources have been removed to prevent piracy.'},
 ];
   
