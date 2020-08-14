@@ -32,7 +32,7 @@ const PROJECTS: Project[] = [
             <h1>{{title}}</h1>
             <h2>Projects List</h2>
             <ul class="projects">
-              <li *ngFor= "let project of projects">
+              <li *ngFor= "let project of projects" (click)="onSelect(project)">
                 <span class="badge">{{project.id}}</span> {{project.name}}
               </li>
             </ul>
