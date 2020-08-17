@@ -36,14 +36,14 @@ const PROJECTS: Project[] = [
                 <span class="badge">{{project.id}}</span> {{project.name}}
               </li>
             </ul>
-            <h2>project: \'{{project.name}}\' is selected</h2>
-            <div><label>Project ID: </label>{{project.id}}</div>
+            <h2>project: \'{{selectedProject.name}}\' is selected</h2>
+            <div><label>Project ID: </label>{{selectedProject.id}}</div>
             <div>
               <label>Project Name: </label>
-              <input [(ngModel)] = "project.name" placeholder="name">
+              <input [(ngModel)] = "selectedProject.name" placeholder="name">
             </div>
-            <div><label>Root Folder: C:\\\\Desktop</label>{{project.root}}</div>
-            <div><label>Project Description: </label>{{project.desc}}</div>
+            <div><label>Root Folder: C:\\\\Desktop</label>{{selectedProject.root}}</div>
+            <div><label>Project Description: </label>{{selectedProject.desc}}</div>
           `,
   styles: 
           [`
@@ -98,11 +98,18 @@ const PROJECTS: Project[] = [
 })
 export class AppComponent {
   title = 'Nate\'s Projects';
+  /*
   project: Project = {
     id: 1001,
     name: 'MyProject',
     root: '\\CODING PROJECTS\\MyProject',
     desc: 'This is a simple sample project.'
   };
+  */
+  selectedProject: Project;
   projects = PROJECTS;
+
+  onSelect(project: Project): void {
+    this.selectedProject = project;
+  }
 } 
