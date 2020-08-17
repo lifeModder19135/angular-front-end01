@@ -32,18 +32,21 @@ const PROJECTS: Project[] = [
             <h1>{{title}}</h1>
             <h2>Projects List</h2>
             <ul class="projects">
-              <li *ngFor= "let project of projects" (click)="onSelect(project)">
+              <li *ngFor="let project of projects"                
+                (click)="onSelect(project)">
                 <span class="badge">{{project.id}}</span> {{project.name}}
               </li>
             </ul>
-            <h2>project: \'{{selectedProject.name}}\' is selected</h2>
-            <div><label>Project ID: </label>{{selectedProject.id}}</div>
-            <div>
-              <label>Project Name: </label>
-              <input [(ngModel)] = "selectedProject.name" placeholder="name">
+            <div class="project_details" *ngIf="selectedProject">
+              <h2>project: \'{{selectedProject.name}}\' is selected</h2>
+              <div><label>Project ID: </label>{{selectedProject.id}}</div>
+              <div>
+                <label>Project Name: </label>
+                <input [(ngModel)] = "selectedProject.name" placeholder="name">
+              </div>
+              <div><label>Root Folder: C:\\\\Desktop</label>{{selectedProject.root}}</div>
+              <div><label>Project Description: </label>{{selectedProject.desc}}</div>
             </div>
-            <div><label>Root Folder: C:\\\\Desktop</label>{{selectedProject.root}}</div>
-            <div><label>Project Description: </label>{{selectedProject.desc}}</div>
           `,
   styles: 
           [`
@@ -94,20 +97,16 @@ const PROJECTS: Project[] = [
             margin-right: .8em;
             border-radius: 4px 0 0 4px;
           }
+          .project_details{
+
+          }
           `]
 })
+
 export class AppComponent {
-  title = 'Nate\'s Projects';
-  /*
-  project: Project = {
-    id: 1001,
-    name: 'MyProject',
-    root: '\\CODING PROJECTS\\MyProject',
-    desc: 'This is a simple sample project.'
-  };
-  */
-  selectedProject: Project;
+  title = 'Nate\'s Projects'; 
   projects = PROJECTS;
+  selectedProject: Project;
 
   onSelect(project: Project): void {
     this.selectedProject = project;
